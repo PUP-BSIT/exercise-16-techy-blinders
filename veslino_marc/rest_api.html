@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="./style/rest_api.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Database</h1>
+
+      <div class="form-group">
+        <input id="movie_name" 
+               type="text" 
+               placeholder="Movie Name"/>
+        <input id="movie_type" 
+               type="text" 
+               placeholder="Genre"/>
+        <input id="movie_year" 
+               type="number" 
+               placeholder="Year"/>
+      </div>
+
+      <div class="form-group">
+        <input id="movie_director" 
+               type="text" 
+               placeholder="Director"/>
+        <input id="movie_country" 
+               type="text" 
+               placeholder="Country"/>
+      </div>
+
+      <button class="submit-btn" 
+              type="button" 
+              onclick="submitMovie()">ADD MOVIE
+      </button>
+
+      <div id="result"></div>
+
+    </div>
+    <script src="./script/rest_api.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style/styles.css" rel="stylesheet">
+        <title>Veslino Marc Page</title>
+    </head>
+    <body>
+        <div id="background_image">
+            <h1>Veslino Marc</h1>
+        </div>
+
+        <div>
+            <h2>My interest and hobbies</h2>
+                <ul class="my-unordered-list">
+                    <li>Watching Movies</li>
+                    <li>Reading Manga</li>
+                    <li>Basketball</li>
+                    <li>Music</li>
+                    <li>Art</li>
+                </ul>
+        </div>
+
+        <div id="works_section">
+            <h2>My works</h2>
+                <ol class="my-ordered-list">
+                    <li>
+                        <a href="./countries.html">Countries Of The World</a>
+                    </li>
+                    <li>
+                        <a href="./rest_api.html">Rest Api Movie</a>
+                    </li>
+                    <li>
+                        <a href="./movies_review.html">Movie Reviews</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="./music.html">Music</a>
+                    </li>
+                </ol>
+        </div>
+
+        <div>
+            <h2>Testimonials</h2>
+                <p>Your website looks cool and amazing. - Piadozo</p>
+                <p>Your website is clean. - Mosquito</p>
+                <p>A fun and personal webpage that showcases a love for movies,
+                    manga, basketball, music, and art. - Consultado</p>
+        </div>
+
+        <div id="gallery_section">
+            <h2>Gallery</h2>
+                <div class="gallery-section-1">
+                    <img class="images" src="./asset/workjacket.png"
+                         alt="Cotton Jacket">
+                    <img class="images" src="./asset/tshirt.png"
+                         alt="Cotton T-Shirt">
+                    <img class="images" src="./asset/vest.png"
+                         alt="Cotton Vest">
+                </div>
+
+                <div class="gallery-section-2">
+                    <img class="images" src="./asset/trapperhat.png"
+                         alt="Custom Cap">
+                    <img class="images" src="./asset/totebag.png"
+                         alt="Tote Bag">
+                    <img class="images" src="./asset/texturedshoes.png"
+                         alt="Black Shoes">
+                </div>
+        </div>
+
+        <div>
+            <form>
+                <h2>Contact Form</h2>
+                    <div class="container">
+                        <div id="contact_section">
+                            <label for="first_name">Contact Name: </label>
+                            <input type="text"
+                                   name="first_name"
+                                   id="first_name"
+                                   placeholder="First Name">
+                            <input type="text"
+                                   name="last_name"
+                                   id="last_name"
+                                   placeholder="Last Name">
+                        </div>
+
+                        <div id="email_section">
+                            <label for="email">Email Address: </label>
+                                <input type="email"
+                                       name="email"
+                                       id="email"
+                                       placeholder="example@youremail.com">
+                        </div>
+
+                        <div id="postal_section">
+                            <label for="postal">Postal Address: </label>
+                                <div class="section-1">
+                                    <input type="text"
+                                           name="street_address"
+                                           id="street_address"
+                                           placeholder="Street">
+                                    <input type="text"
+                                           name="city_address"
+                                           id="city_address"
+                                           placeholder="City">
+                                </div>
+
+                                <div class="section-2">
+                                    <input type="text"
+                                           name="zip_code"
+                                           id="zip_code"
+                                           placeholder="Zip Code">
+
+                                    <select>
+                                        <option value="">Country</option>
+                                        <option value="philippines">
+                                            Philippines</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="china">China</option>
+                                    </select>
+                                </div>
+                        </div>
+
+                        <div id="message_section">
+                            <label for="message">Message: </label>
+                            <textarea name="text_message"
+                                      id="text_message"
+                                      placeholder="Your message..."></textarea>
+                        </div>
+
+                        <div id="button_section">
+                            <button type="button">Submit</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+
+        <div id="my_goals_section">
+            <h2 class="my-goals-heading">My Goals</h2>
+                <div class="my-goals-list-section">
+                    <ul class="unordered-list-section">
+                        <li>Support and provide to my family</li>
+                        <li>Be stable in every dimension of well-being</li>
+                        <li>Learn more about programming</li>
+                        <li>Be professional and improve my logical
+                            thinking skill</li>
+                        <li>Achieve my goals and be genuinely happy</li>
+                    </ul>
+                </div>
+
+            <div id="comment_section">
+                <h2>Comments</h2>
+                <div class="sort-buttons">
+                    <button id="sort_ascending">Sort Ascending</button>
+                    <button id="sort_descending">Sort Descending</button>
+                </div>
+                <p>Having this kind of goal is inspiring me to
+                        achieve more - Piadozo
+                        <span>3/19/2025 | 10:35:09 PM</span></p>
+                <p>I hope you achieve all of your goals - Mosquito
+                        <span>3/19/2025 | 11:05:38 PM</span></p>
+                <p>Your goals reflect a strong commitment to family, personal
+                        growth, and professional success. - Consultado
+                        <span>4/19/2025 | 11:15:13 PM</span></p>
+            </div>
+
+            <h3 class="comment-heading">Leave a Comment</h3>
+                <form id="comment_form">
+                    <label for="name_person">Name: </label>
+                    <input type="text"
+                           id="name_person"
+                           name="name_person"
+                           placeholder="Your name"
+                           required>
+                    <label for="comment_of_person">Comment: </label>
+                    <textarea id="comment_of_person"
+                              name="comment_of_person"
+                              placeholder="Your comment..."
+                              required></textarea>
+                    <button type="button"
+                            id="comment_button">Comment</button>
+                </form>
+        </div>
+        <script src="./script/scripts.js"></script>
+    </body>
+</html>
