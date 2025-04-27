@@ -1,0 +1,155 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#car_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#car_form input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#car_table input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#message {
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 320px) {
+    th, td {
+        padding: 5px;
+    }
+
+    #car_table thead {
+        display: none;
+    }
+
+    #car_table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #car_table tbody td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    #car_table tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #message {
+        margin: 20px 0px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    th, td {
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+
+    #car_table thead {
+        display: none;
+    }
+
+    #car_table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #car_table tbody td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    #car_table tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #message {
+        margin: 20px 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    th, td {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    #car_table thead {
+        display: none;
+    }
+
+    #car_table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #car_table tbody td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    #car_table tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #message {
+        margin: 20px 0px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Manager</title>
+        <link rel="stylesheet" href="style/rest_api.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Car Manager</h1>
+        <h2>Add Car</h2>
+        <form id="car_form">
+            <input type="text"
+                   id="brand"
+                   name="brand"
+                   placeholder="Enter brand"
+                   required>
+            <input type="text"
+                   id="model"
+                   name="model"
+                   placeholder="Enter model"
+                   required>
+            <input type="number"
+                   id="year"
+                   name="year"
+                   placeholder="Enter year"
+                   required>
+            <input type="text"
+                   id="color"
+                   name="color"
+                   placeholder="Enter color"
+                   required>
+            <input type="text"
+                   id="transmission"
+                   name="transmission"
+                   placeholder="Enter transmission"
+                   required>
+
+            <button type="submit">ADD</button>
+        </form>
+
+        <div id="message"></div>
+
+        <h2>Car List</h2>
+        <table id="car_table">
+            <thead>
+                <tr>
+                    <th>Car ID</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Color</th>
+                    <th>Transmission</th>
+                    <th>Choose Action</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+        <script src="script/rest_api.js"></script>
+    </body>
+</html>

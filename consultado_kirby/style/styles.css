@@ -1,0 +1,490 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#background_main {
+    background-image: url(../asset/background.png);
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+div {
+    margin: 30px auto;
+    width: 80%;
+}
+
+h1, h2, p, .list-main {
+    text-align: center;
+}
+
+h2 {
+    font-style: oblique;
+    margin-top: 40px;
+}
+
+#gallery {
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: 270px 270px;
+    gap: 10px;
+    padding: 15px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.list-main {
+    padding: auto;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.division-main {
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px 0;
+    background-color: rgb(218, 218, 218);
+}
+
+#testimonials {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+}
+
+#testimonials p {
+    margin: 15px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#title_form {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#contact_font {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#form_font {
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+}
+
+#container_main {
+    display: grid;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgb(218, 218, 218);
+    margin: 0 auto;
+    border-radius: 3%;
+    width: 80%;
+    max-width: 550px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#container_main > div {
+    background-color: rgb(218, 218, 218);
+    margin: 5px;
+}
+
+.division-contact {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.division-contact div {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea.input-field {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#division_buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+}
+
+#reset, #submit {
+    margin: 0 10px;
+}
+
+#reset_button, #submit_button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#reset_button {
+    background-color: red;
+}
+
+#submit_button {
+    background-color: green;
+}
+
+#reset_button:hover, #submit_button:hover {
+    opacity: 0.8;
+}
+
+#comment_form {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    width: 400px;
+    margin: auto;
+}
+
+#comment_button {
+    height:30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#comment_button:disabled {
+    cursor: not-allowed;
+}
+
+#comment_section {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+#sort_buttons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#ascending, #descending {
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    div {
+        width: 90%;
+        margin: 15px auto;
+    }
+    
+    #gallery {
+        width: 90%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 10px;
+    }
+    
+    img {
+        width: 90%;
+        height: 180px;
+        margin: 5px auto;
+        display: block;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    
+    .list-main {
+        padding: auto;
+        font-size: 14px;
+    }
+    
+    #testimonials p {
+        font-size: 14px;
+        margin: 10px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    #contact_font {
+        font-size: 1.8em;
+    }
+    
+    #form_font {
+        font-size: 1.1em;
+    }
+    
+    #container_main {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .division-contact div {
+        padding: 5px;
+    }
+    
+    #division_buttons {
+        grid-column: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #reset, #submit {
+        margin: 5px 0;
+    }
+    
+    #reset_button, #submit_button {
+        width: 120px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #comment_form {
+        width: auto;
+        margin: auto;
+    }
+
+    #comment_section {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(218, 218, 218);
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    div {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    #gallery {
+        width: 90%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px;
+    }
+    
+    img {
+        width: 90%;
+        height: 200px;
+        margin: 8px auto;
+        display: block;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    
+    .list-main {
+        padding: auto;
+        font-size: 15px;
+    }
+    
+    #testimonials p {
+        font-size: 15px;
+        margin: 15px;
+    }
+    
+    body {
+        font-size: 15px;
+    }
+    
+    #contact_font {
+        font-size: 2em;
+    }
+    
+    #form_font {
+        font-size: 1.2em;
+    }
+    
+    #container_main {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    .division-contact div {
+        padding: 8px;
+    }
+    
+    #division_buttons {
+        grid-column: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #reset, #submit {
+        margin: 8px 0;
+    }
+    
+    #reset_button, #submit_button {
+        width: 130px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    #comment_form {
+        width: auto;
+        margin: auto;
+    }
+
+    #comment_section {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(218, 218, 218);
+        width: 330px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    div {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    #gallery {
+        width: 90%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    img {
+        width: 90%;
+        height: 220px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        margin-top: 35px;
+    }
+    
+    .list-main {
+        padding: auto;
+        font-size: 16px;
+    }
+    
+    #testimonials p {
+        font-size: 16px;
+        margin: 15px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    #contact_font {
+        font-size: 2.2em;
+    }
+    
+    #form_font {
+        font-size: 1.3em;
+    }
+    
+    #container_main {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    .division-contact div {
+        padding: 10px;
+    }
+    
+    #division_buttons {
+        grid-column: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #reset, #submit {
+        margin: 8px 0;
+    }
+    
+    #reset_button, #submit_button {
+        width: 140px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #comment_form {
+        width: auto;
+        margin: auto;
+    }
+
+    #comment_section {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(218, 218, 218);
+        width: 370px;
+        height: 200px;
+        margin: auto;
+    }
+}
