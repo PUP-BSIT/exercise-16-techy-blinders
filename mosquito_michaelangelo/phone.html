@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phones</title>
+        <link rel="stylesheet" href="./style/styles_phone.css">
+    </head>
+    <body>
+        <form id="phone_form">
+            <h2>Add New Phone</h2>
+            <div>
+                <label for="phone_type">Phone Type</label>
+                <input id="phone_type" type="text" name="phone_type">
+            </div>
+
+            <div>
+                <label for="phone_name">Phone Name</label>
+                <input id="phone_name" type="text" name="phone_name">
+            </div>
+
+            <div>
+                <label for="release_date">Release Date</label>
+                <input id="release_date" type="text" name="release_date">
+            </div>
+
+            <div>
+                <label for="creator">Phone Creator</label>
+                <input id="creator" type="text" name="creator">
+            </div>
+
+            <div>
+                <label for="price">Phone Price</label>
+                <input id="price" type="text" name="price">
+            </div>
+
+            <button type="button" onclick="submitPhone()">Add Phone</button>
+        </form>
+
+        <h2 id="h2_body">Phone Collection</h2>
+        <div id="phone_list"></div>
+
+        <script src="./script/script_phone.js"></script>
+    </body>
+</html>
