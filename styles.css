@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#unordered_list {
+    display: inline-block;
+    text-align: left;
+}
+
+#unordered_list li {
+    margin: 10px 0;
+}
+
+#unordered_list a {
+    color: black;
+    width: 100%;
+}
+
+#unordered_list a:hover {
+    color: white;
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    h1 {
+        font-size: 32px;
+    }
+}
