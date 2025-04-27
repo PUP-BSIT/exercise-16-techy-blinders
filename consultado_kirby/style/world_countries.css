@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#search_input {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#flag {
+    max-width: 200px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #search_input {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #flag {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #search_input {
+        width: 93%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #flag {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #search_input {
+        width: 93%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #flag {
+        max-width: 100%;
+        height: auto;
+    }
+}
