@@ -1,0 +1,471 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-container-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.header-border {
+    width: 83%;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header-information-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.header-information-border {
+    color: white;
+    width: 50%;
+    background-color: grey;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.my-about-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 5%;
+    gap: 20px;
+}
+
+.unlisted-container-border, .ordered-container-border, 
+.testimonial-container-border {
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+}
+
+.unlisted-container-border, .ordered-container-border {
+    min-width: 150px;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.testimonial-container-border {
+    font-size: 10px;
+    flex: 1 1 calc(40% - 20px);
+}
+
+.testimonial-container-border h4 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.unlisted-list, .ordered-list {
+    text-align: center;
+}
+
+.unlisted-list ul, .ordered-list ol {
+    display: inline-block;
+    text-align: left;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100px;
+}
+
+.gallery-picture-container {
+    display: flex;
+    justify-content: center;
+    margin: 5% 5%;
+}
+
+.gallery-picture-border {
+    width: 100%;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.gallery-picture-border h4 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.my-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.my-pictures img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.contact-information-container {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.contact-information-border {
+    width: 90%;
+    max-width: 500px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input-container-border, .number-container-border, .age-container-border, 
+.country-container-border, .gender-container-border {
+    margin-top: 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.input-container-border input, .number-container-border input, 
+.age-container-border input, .country-container-border select {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 0px;
+    padding: 5px;
+}
+
+.submit-button-border {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#submit_button, #cancel_button {
+    border: solid 0px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#submit_button {
+    background-color: green;
+    color: white;
+    transition: background-color 0.25s;
+}
+
+#cancel_button {
+    background-color: red;
+    color: white;
+    transition: background-color 0.25s;
+}
+
+#submit_button:hover {
+    background-color: rgb(109, 214, 109);
+}
+
+#cancel_button:hover {
+    background-color: rgb(241, 84, 84);
+}
+
+.goal-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.my-goal-header-border {
+    background-color: grey;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.my-goal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 3% 5%;
+}
+
+.my-goal-border, .goal-comments-border {
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+    flex: 1 1 calc(40% - 20px);
+    min-width: 250px;
+}
+
+.header-form-validation {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.header-form-validation-border {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 90%;
+    max-width: 600px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.form-validation-container {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 5% 0;
+}
+
+.form-validation-border {
+    width: 90%;
+    max-width: 500px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 5% 0;
+}
+
+.message-header-border {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+    max-width: 600px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.comment-container {
+    border: solid 0px;
+    margin-top: -2%;
+    height: 100px;
+    width: 80%;
+    max-width: 500px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+#my_input_name {
+    margin-top: 5px;
+    width: 100%;
+    border: solid 0px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.message-input-container {
+    margin-top: 5%;
+}
+
+.message-input-container textarea {
+    width: 100%;
+    margin-top: 2%;
+    border: solid 0px;
+    border-radius: 5px;
+    padding: 8px;
+    resize: vertical;
+}
+
+.submit-button-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#form_button {
+    border: solid 0px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: not-allowed;
+}
+
+.ascending-descending-button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#ascending_button {
+    border: solid 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#descending_button {
+    border: solid 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#ascending_button:hover {
+    background-color: rgb(95, 167, 95);
+}
+
+#descending_button:hover {
+    background-color: rgb(238, 95, 95);
+}
+
+@media (max-width: 320px) {
+    .header-border, .header-information-border {
+        width: 95%;
+    }
+    
+    .my-about-header {
+        flex-direction: column;
+    }
+    
+    .unlisted-container-border, .ordered-container-border, 
+    .testimonial-container-border {
+        width: 100%;
+    }
+    
+    .my-pictures {
+        justify-content: space-around;
+    }
+    
+    .my-pictures img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .contact-information-border, .form-validation-border, 
+    .message-header-border {
+        width: 95%;
+    }
+    
+    .my-goal-container {
+        flex-direction: column;
+    }
+    
+    .my-goal-border, .goal-comments-border {
+        width: 100%;
+    }
+    
+    .header-form-validation-border {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .header-border, .header-information-border {
+        width: 90%;
+    }
+    
+    .my-about-header {
+        flex-direction: column;
+    }
+    
+    .unlisted-container-border, .ordered-container-border, 
+    .testimonial-container-border {
+        width: 100%;
+    }
+    
+    .contact-information-border, .form-validation-border, 
+    .message-header-border {
+        width: 90%;
+    }
+    
+    .my-goal-container {
+        flex-direction: column;
+    }
+    
+    .my-goal-border, .goal-comments-border {
+        width: 100%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .my-about-header {
+        flex-direction: column;
+    }
+    
+    .unlisted-container-border, .ordered-container-border,
+    .testimonial-container-border {
+        width: 100%;
+    }
+    
+    .my-goal-container {
+        flex-direction: column;
+    }
+    
+    .my-goal-border, .goal-comments-border {
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .my-about-header {
+        justify-content: space-between;
+    }
+    
+    .unlisted-container-border, .ordered-container-border {
+        flex: 1 1 calc(45% - 20px);
+    }
+    
+    .testimonial-container-border {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+}

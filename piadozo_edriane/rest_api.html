@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/rest_api.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POKEDEX</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header-border">
+                <h1>POKEDEX</h1>
+            </div>
+        </div>
+        
+        <div class="class-container">
+            <div class="class-border">
+                <div class="top-border">
+                    <input type="hidden" id="pokemon_id">
+                    <div class="pokemon-name-container">
+                        <input type="text" id="pokemon_name" 
+                               placeholder="Pokemon Name">
+                    </div>
+
+                    <div class="pokemon-type-container">
+                        <input type="text" id="pokemon_type"
+                               placeholder="Pokemon Type">
+                    </div>
+
+                    <div class="pokemon-hp-container">
+                        <input type="text" id="pokemon_hp" 
+                               placeholder="HP ammount">
+                    </div>
+
+                    <div class="pokemon-defense-container">
+                        <input type="text" id="pokemon_def"
+                               placeholder="Defense ammount">
+                    </div>
+
+                    <div class="pokemon-attack-container">
+                        <input type="text" id="pokemon_attack"
+                               placeholder="Damage ammount">
+                    </div>
+
+                    <div class="button-container">
+                        <button id="add_btn" class="visible" 
+                                onclick="submitUser()">
+                            Add Pokemon
+                        </button>
+                        <button id="update_btn" class="hidden"
+                                onclick="updateUser()">Update Pokemon</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="display-container">
+            <div class="header-border">
+                <h2>POKEMON DATABASE</h2>
+            </div>
+
+            <div class="class-border">
+                <div class="top-border">
+                    <table class="pokemon-table">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>TYPE</th>
+                                <th>HP</th>
+                                <th>DEFENSE</th>
+                                <th>ATTACK</th>
+                                <th>ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pokemon-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script/rest_api.js"></script>
+    </body>
+</html>
