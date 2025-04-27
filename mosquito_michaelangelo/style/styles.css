@@ -1,0 +1,411 @@
+:root {
+	--bg-color: #f8f9fa;
+	--text-color: #333;
+	--card-bg: #fff;
+	--primary-color: #007BFF;
+	--shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+* {
+	font-family:Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+ul, ol {
+	list-style: none;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+}
+
+.navbar {
+	width: 100%;
+	background-image: url(../asset/nav-bg-img.png);
+	background-size: cover;
+	background-position: center;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	position: fixed;
+	box-shadow: var(--shadow);
+}
+
+.navbar a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	color: var(--primary-color);
+}
+
+#title_div, #interest_hobbies_div, #my_work_div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#interest_hobbies_div {
+	width: 70%;
+	margin-left:7.3%;
+	text-decoration: none;
+}
+
+#my_work_div, #interest_hobbies_div, #testimonial_div, #gallery_div,
+#contact_div, .goal-comment {
+	margin-top: 17%;
+	background: var(--card-bg);
+	box-shadow: var(--shadow);
+	border-radius: 8px;
+	width: 50%;
+	padding: 2%;
+	margin-left: 23%;
+	border-radius: 8px;
+	height: 20%;
+}
+
+#interest_hobbies_div li {
+	margin-left: -8%;
+}
+
+.work-div-2 {
+	font-weight: 700;
+	margin-left: -3%;
+}
+
+.websites a:hover {
+	color: var(--primary-color);
+}
+
+#testimonial_div h2, #gallery_div h2, #contact_div h2 {
+	text-align: center;
+	font-size: xx-large;
+}
+
+#gallery_div img {
+	width: 170px;
+	height: 170px;
+}
+
+.gallery-div-2 {
+	margin-left: 16%;
+}
+
+.label-name, .label-email, .label-phone, .label-message {
+    display: block;
+    font-size: large;
+    font-weight: 600;
+    color: var(--deep-slate-blue);
+    margin-top: 3%;
+}
+
+.input-name, .input-email, .input-phone, .input-message {
+    padding-bottom: 1%;
+    border-radius: 10px;
+    font-size: medium;
+    width: 100%;
+}
+
+.submit-button {
+    color: var(--text-color);
+    margin-top: 10px;
+	margin-left: 89%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+	color: var(--bg-color);
+	background-color: var(--text-color);
+}
+
+.goal-comment {
+    margin: 1%;
+	margin-top: 16%;
+	margin-left: 24%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+	color: var(--text-color);
+}
+
+.goal-div {
+    display: flex;
+    justify-content: space-between;
+	font-size: medium;
+}
+
+.team-comment-div h2 {
+	text-align: center;
+}
+
+.goal-1, .goal-2, .goal-3, .goal-4 {
+    width: 18%;
+    padding: 1%;
+    border-radius: 10px;
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+}
+
+#comment_div {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#comment_name_input, #country_input {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.comment-name, .comment-label {
+    font-size: large;
+    font-weight: 700;
+} 
+
+#message_team {
+	width: 100%;
+}
+
+.comment-label {
+    margin-top: 2%;
+}
+
+#comment_button:disabled {
+    cursor: not-allowed;
+    background: none;
+    color: black;
+}
+
+#comment_button, #country_button {
+    padding: 1.5%;
+    width: 14%;
+    border-radius: 10px;
+	margin-left: 87%;
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.ascending-button, .descending-button {
+	padding: 1.5%;
+    width: 14%;
+    border-radius: 10px;
+	margin-left: 87%;
+    background: none;
+}
+
+.descending-button:hover, .ascending-button:hover{
+	color: var(--bg-color);
+	background-color: var(--text-color);
+}
+
+.countries-title {
+	display: grid;
+	text-align: center;
+}
+
+.box-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box-1, .box-2, .box-3 {
+	margin-top: 3%;
+	background: var(--card-bg);
+	box-shadow: var(--shadow);
+	border-radius: 8px;
+	width: 50%;
+	padding: 2%;
+	margin-left: 23%;
+	border-radius: 8px;
+	height: 20%;
+}
+
+.flag {
+    width: 20%;
+    margin-top: 10px;
+	border-radius: 20px;
+}
+
+.region-country {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#country_button {
+	margin-top: 3%;
+}
+
+@media (max-width: 320px) {
+	#interest_hobbies_div, #my_work_div, #testimonial_div, #gallery_div,
+	#contact_div, .goal-comment {
+		width: 80%;
+		margin-left: 9%;
+	}
+
+	#gallery_div img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.gallery-div-2 {
+		margin-left: 20%;
+	}
+
+	.submit-button {
+        font-weight: 700;
+        font-size: large;
+		width: 100%;
+		margin-left: 1%;
+    }
+
+	.goal-div {
+		flex-direction: column;
+	}
+
+	.goal-1, .goal-2, .goal-3, .goal-4 {
+        width: 75%;
+        margin-left: 10.5%;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
+
+	#comment_button, .ascending-button, .descending-button {
+		width: 105%;
+		margin-left: -1%;
+	}
+
+	#country_button {
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.flag {
+		width: 90%;
+		margin-top: 5px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+	#interest_hobbies_div, #my_work_div, #testimonial_div, #gallery_div,
+	#contact_div, .goal-comment {
+		width: 80%;
+		margin-left: 9%;
+	}
+
+	#gallery_div img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.gallery-div-2 {
+		margin-left: 20%;
+	}
+
+	.submit-button {
+        font-weight: 700;
+        font-size: large;
+		width: 100%;
+		margin-left: 1%;
+    }
+
+	.goal-div {
+		flex-direction: column;
+	}
+
+	.goal-1, .goal-2, .goal-3, .goal-4 {
+        width: 75%;
+        margin-left: 10.5%;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
+
+	#comment_button, .ascending-button, .descending-button {
+		width: 105%;
+		margin-left: -1%;
+	}
+
+	#country_button {
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.flag {
+		width: 90%;
+		margin-top: 5px;
+	}
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+	#interest_hobbies_div, #my_work_div, #testimonial_div, #gallery_div,
+	#contact_div, .goal-comment {
+		width: 80%;
+		margin-left: 9%;
+	}
+
+	#gallery_div img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.gallery-div-2 {
+		margin-left: 20%;
+	}
+
+	.submit-button {
+        font-weight: 700;
+        font-size: large;
+		width: 100%;
+		margin-left: 1%;
+    }
+
+	.goal-div {
+		flex-direction: column;
+	}
+
+	.goal-1, .goal-2, .goal-3, .goal-4 {
+        width: 75%;
+        margin-left: 10.5%;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
+
+	#comment_button, .ascending-button, .descending-button {
+		width: 105%;
+		margin-left: -1%;
+	}
+
+	#country_button {
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.flag {
+		width: 90%;
+		margin-top: 5px;
+	}
+}

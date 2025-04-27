@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mosquito michael angelo page</title>
+        <link rel="stylesheet" href="./style/styles.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#title_div">Home</a>
+            <a href="#my_work_div">Sites</a>
+            <a href="#contact_div">Contacts</a>
+        </div>
+
+        <div id="title_div">
+            <h1>MOSQUITO MICHAEL ANGELO</h1>
+            <p>Hi! I'm Mosquito. Welcome to my website!</p>
+        </div>
+
+        <div id="interest_hobbies_div">
+            <h2>My Interest and Hobbies</h2>
+
+            <div>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Reading novels</li>
+                    <li>Playing sports</li>
+                    <li>Sleeping</li>
+                    <li>Eating</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="my_work_div">
+            <h2>My Works</h2>
+
+            <div class="work-div-2">
+                <ol class="websites">
+                    <li><a href="./home.html"
+                           target="_blank">Home</a></li>
+                    <li><a href="./myWebPage.html"
+                           target="_blank">My Page</a></li>
+                    <li><a href="./contact.html"
+                           target="_blank">Contacts</a></li>
+                    <li><a href="./countries.html"
+                           target="_blank">Countries of the world</a></li>
+                    <li><a href="./phone.html"
+                           target="_blank">Phone Collection</a></li>
+                    
+                </ol>
+            </div>
+        </div>
+
+        <div id="testimonial_div">
+            <h2>Testimonials</h2>
+                <div class="testimonial-div-2">
+                    <p>Your interest and hobbies are cool. - Piadozo</p>
+                    <p>Great layout and cool interest. Also the idea
+                        of how you design is very good. - Veslino</p>
+                    <p>A simple and relatable webpage that highlights a love
+                        for gaming, novels, sports, sleeping, and good food.
+                        - Consultado</p>
+                </div>
+        </div>
+
+        <div id="gallery_div">
+            <h2>Gallery</h2>
+
+            <div class="gallery-div-2">
+                <img src="./asset/image1.jpg" alt="Image 1">
+                <img src="./asset/image2.png" alt="Image 2">
+                <img src="./asset/image3.jpg" alt="Image 3">
+                <img src="./asset/image4.jpg" alt="Image 4">
+                <img src="./asset/image5.jpg" alt="Image 5">
+                <img src="./asset/image6.jpg" alt="Image 6">
+            </div>
+        </div>
+
+        <div id="contact_div">
+            <h2 class="label-contact">CONTACT</h2>
+                <div class="name-div">
+                    <label for="name" class="label-name">Name</label>
+                    <input type="text"
+                           name="name"
+                           placeholder="Full Name"
+                           class="input-name"
+                           required>
+                </div>
+
+                <div class="email-div">
+                    <label for="email" class="label-email">Email</label>
+                    <input type="email"
+                           name="email"
+                           placeholder="moks.kel@example.com"
+                           class="input-email"
+                           required>
+                </div>
+
+                <div class="phone-div">
+                    <label for="phone" class="label-phone">Phone</label>
+                    <input type="tel"
+                           name="phone"
+                           placeholder="Your Phone Number"
+                           class="input-phone"
+                           required>
+                </div>
+
+                <div class="message-div">
+                    <label for="message" 
+                           class="label-message">Your Message</label>
+                    <textarea name="message" 
+                              class="input-message" 
+                              rows="4"></textarea>
+                </div>
+
+                <div class="button-div">
+                    <input type="submit"
+                           class="submit-button"
+                           placeholder="Submit">
+                </div>
+        </div>
+
+        <div class="goal-comment">
+            <div class="goal-div">
+                <div class="goal-1">
+                    <h3>Give my Parents a Better Life</h3>
+                </div>
+
+                <div class="goal-2">
+                    <h3>Graduate in Information Technology</h3>
+                </div>
+
+                <div class="goal-3">
+                    <h3>Grow and Improve Myself</h3>
+                </div>
+
+                <div class="goal-4">
+                    <h3>Improve my Programming Skills</h3>
+                </div>
+            </div>
+
+            <div class="team-comment-div">
+                <h2>Comments</h2>
+
+                <div class="message-team">
+                    <p>The goals that you have is interesting also
+                        i'm hoping that one day you achieve that - Veslino
+                    <span>3/19/2025 | 10:49:30 PM</span></p>
+                    <p>I hope that someday you will
+                        be a good web developer - Piadozo
+                    <span>3/19/2025 | 10:35:45 PM</span></p>
+                    <p>Focused on growth, success, and family, your goals
+                        set a strong path forward. - Consultado
+                    <span>3/19/2025 | 11:15:35 PM</span></p>
+                </div>
+            </div>
+
+            <div id="comment_div">
+                <div class="comment-name">
+                    <label for="comment_name_input">Name</label>
+                </div>
+                <input type="text"
+                       name="comment_name_input"
+                       placeholder="Full Name"
+                       id="comment_name_input"
+                       required>
+
+                <div class="comment-label">
+                    <label for="message_team">Message</label>
+                </div>
+                <div class="message-team-input">
+                    <textarea name="message_team"
+                              id="message_team"
+                              rows="5"
+                              required></textarea>
+                </div>
+
+                <div>
+                    <input type="button" 
+                           value="comment"
+                           id="comment_button"
+                           onclick="addComment()"
+                           disabled>
+                </div>
+
+                <div class="ascending-div">
+                    <button onclick="sortAscending()"
+                            class="ascending-button">
+                        ascending
+                    </button>
+                </div>
+
+                <div class="descending-div">
+                    <button onclick="sortDescending()"
+                            class="descending-button">
+                        descending
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script/scripts.js"></script>
+    </body>
+</html>
