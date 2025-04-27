@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/countries_of_the_world.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countires of the world</title>
+    </head>
+
+    <body>
+        <div class="header-container">
+            <div class="header-border">
+                <h1>Countries of the world</h1>
+                <p>Search for any country to discover its details 
+                    and neighboring countries in the same region.</p>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-border">
+                <input type="text" id="input_country" 
+                       placeholder="Enter a country">
+                <button type="button" id="submit_button">Search</button>
+            </div>
+        </div>
+
+        <div class="country-container" id="country_container">
+            <div class="country-header">
+                <img class="flag" id="country_flag" src="" alt="Country flag">
+                <h2 class="country-name" id="country_name"></h2>
+            </div>
+
+            <div class="country-details">
+                <div class="detail-row">
+                    <div class="detail-label">Official Name: </div>
+                    <div class="detail-value" id="official_name"></div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Capital: </div>
+                    <div class="detail-value" id="capital"></div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Region: </div>
+                    <div class="detail-value" id="region"></div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Population: </div>
+                    <div class="detail-value" id="population"></div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Languages: </div>
+                    <div class="detail-value" id="language"></div>
+                </div>  
+
+                <div class="detail-row">
+                    <div class="detail-label">Currency: </div>
+                    <div class="detail-value" id="currency"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="region-countries" id="region_countries">
+            <h3 class="region-title" id="region_title">
+                Countries on the same region</h3>
+            <div class="countries-grid" id="countries_grid"></div>
+        </div>
+
+        <script src="./script/countries_of_the_world.js"></script>
+    </body>
+</html>

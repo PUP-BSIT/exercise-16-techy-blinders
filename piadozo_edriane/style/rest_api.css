@@ -1,0 +1,296 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.class-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-border {
+    padding: 10px;
+    border: solid 0px;
+    display: flex;
+    width: 40%;
+    margin: 20px auto;
+    height: auto;
+    min-height: 40px;
+    justify-content: center;
+    background-color: rgb(171, 32, 32);
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.class-border {
+    padding: 20px;
+    border: solid 0px;
+    background-color: rgb(228, 42, 42);
+    width: 40%;
+    height: auto;
+    min-height: 300px;
+    margin: auto;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.top-border {
+    padding: 20px;
+    border: solid 0px;
+    background-color: rgb(68, 65, 65);
+    width: 90%;
+    height: auto;
+    min-height: 80%;
+    margin: auto;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#pokemon_name, #pokemon_type, #pokemon_hp, #pokemon_def, #pokemon_attack {
+    padding: 5px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    width: 97%;
+    margin-top: 10px;
+    border: solid 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(176, 173, 173);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pokemon-table-container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.pokemon-table-border {
+    padding: 20px;
+    border: solid 0px;
+    background-color: rgb(228, 42, 42);
+    width: 40%;
+    min-height: 300px;
+    margin: auto;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.pokemon-table-top {
+    padding: 20px;
+    border: solid 0px;
+    background-color: rgb(68, 65, 65);
+    width: 90%;
+    height: auto;
+    min-height: 80%;
+    margin: auto;
+    justify-content: center;
+    border-radius: 5px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.7em;
+    table-layout: fixed;
+}
+
+.pokemon-table th, .pokemon-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    word-wrap: break-word;
+}
+
+.pokemon-table th {
+    background-color: rgb(83, 83, 83);
+    position: sticky;
+    top: 0;
+}
+
+.pokemon-table tr:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    margin: 15px auto;
+    border: solid 0px;
+    background-color: rgb(21, 102, 21);
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.visible {
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    border: solid 0px;
+    background-color: rgb(21, 102, 21);
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80%;
+    max-width: 250px;
+}
+
+.visible:hover{
+    background-color: rgb(42, 182, 42);
+}
+
+.hidden:hover {
+    background-color: rgb(42, 182, 42);
+}
+
+.edit-btn {
+    border-radius: 5px;
+    border: solid 0px;
+    color: white;
+    background-color: green;
+    width: 70px;
+    padding: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.delete-btn{
+    border-radius: 5px;
+    border: solid 0px;
+    width: 70px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-border, .class-border, .pokemon-table-border {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-border, .class-border, .pokemon-table-border {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .pokemon-table {
+        font-size: 0.6em;
+    }
+
+    .edit-btn, .delete-btn {
+        width: 50px;
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-border, .class-border, .pokemon-table-border {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    .pokemon-table {
+        font-size: 0.5em;
+    }
+
+    .pokemon-table th, .pokemon-table td {
+        padding: 5px 2px;
+    }
+
+    .edit-btn, .delete-btn {
+        width: 40px;
+        font-size: 0.5em;
+        padding: 3px;
+    }
+
+    .top-border, .pokemon-table-top {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .visible {
+        padding: 8px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .pokemon-table {
+        font-size: 0.4em;
+    }
+
+    .edit-btn, .delete-btn {
+        width: 40px;
+        font-size: 0.4em;
+    }
+
+    #pokemon_name, #pokemon_type, #pokemon_hp, #pokemon_def, #pokemon_attack {
+        height: 18px;
+        padding: 3px;
+        font-size: 0.7em;
+    }
+
+    .visible {
+        padding: 5px;
+        font-size: 0.6em;
+    }
+}
